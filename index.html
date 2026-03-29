@@ -5,6 +5,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="format-detection" content="telephone=no, email=no">
 <title>Pranav Maid — Full-Stack Developer</title>
+<link rel="icon" id="favicon" type="image/png" href="https://media.licdn.com/dms/image/v2/D5603AQH6Qy6gY8a3_A/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1700125910729?e=1776297600&v=beta&t=l_IolBNneuETaYWe12Fg2rUA5P6pTsc_6QI0GC34bs8"/>
+<script>
+  (function() {
+    var img = new Image();
+    img.crossOrigin = 'anonymous';
+    img.onload = function() {
+      var canvas = document.createElement('canvas');
+      canvas.width = canvas.height = 64;
+      var ctx = canvas.getContext('2d');
+      ctx.beginPath();
+      ctx.arc(32, 32, 32, 0, Math.PI * 2);
+      ctx.clip();
+      ctx.drawImage(img, 0, 0, 64, 64);
+      document.getElementById('favicon').href = canvas.toDataURL('image/png');
+    };
+    img.src = 'https://media.licdn.com/dms/image/v2/D5603AQH6Qy6gY8a3_A/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1700125910729?e=1776297600&v=beta&t=l_IolBNneuETaYWe12Fg2rUA5P6pTsc_6QI0GC34bs8';
+  })();
+</script>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
