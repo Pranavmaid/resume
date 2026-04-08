@@ -1,0 +1,74 @@
+PRANAV MAID
+Full-Stack Developer
+
+Phone: +91 96898 58340
+Email: pranavmaid1@gmail.com
+GitHub: github.com/pranavmaid
+LinkedIn: linkedin.com/in/pranav-maid-99705717a
+Location: Chhatrapati Sambhaji Nagar, Maharashtra, India
+
+---
+
+SUMMARY
+
+Full-stack developer who enjoys building more than anything else. Driving products from 0 to 1 and scaling them 1 to 100 — owning architecture, execution, and delivery.
+
+---
+
+SKILLS
+
+Languages: JavaScript, TypeScript, Dart, Python
+Frontend: Flutter, React, Next.js, Three.js, Angular
+Backend: Node.js, Flask
+Databases: MongoDB, DynamoDB, Firebase, ClickHouse
+Cloud & DevOps: AWS, GCP, CI/CD, Docker, Nginx, Linux
+Specialisms: AI Pipelines, OCR, WhatsApp APIs, Payment Gateways, POS Integrations, Analytics Pipelines, IoT/OTA, RFID, HubSpot API, Meta APIs
+
+---
+
+EXPERIENCE
+
+Senior Software Developer | Transerg LLP | May 2023 – Present
+- Built and scaled Booky, a WhatsApp-based reservation platform — later acquired by Petpooja. Integrated Swiggy/Zomato-style syncing, improving operational accuracy by 70%.
+- Shipped Petpooja Task — a 30,000 MAU platform combining AI-based image review and structured validation, fully automating manual task-checking cycles.
+- Designed Flowbit AI — OCR extraction pipeline using Llama 3.2 Vision, with custom field-mapping logic for multi-format invoices, cutting data-entry time by 80–90%.
+- Architected OOW (Online Ordering Widgets) — a platform letting restaurants generate full websites from Petpooja data. Integrated payment gateways (Razorpay, Cashfree, Datacap, Yoco), DoorDash delivery, and custom domain configuration per store.
+- Set up Looker Studio dashboards for user-behaviour tracking and product growth insights.
+- Delivered an AI-driven QA Agent that cut testing cycles by 40%.
+- Set up full DevOps infrastructure — server provisioning, Nginx reverse proxies, CI/CD pipelines for frontend & backend, and automated deployments on AWS, reducing deployment time by 50%.
+- Managing 4 teams (15 members) — coordinating architecture, releases, and roadmap.
+Tech: Dart, Node.js, React, Next.js, AWS, Firebase, MongoDB, ClickHouse, Razorpay, DoorDash API, AI Pipelines, OCR, WhatsApp API
+
+Full-Stack Developer | ANTAR IoT | Jun 2022 – May 2023
+- Engineered IoT apps for Sandhya Aqua, reducing customer support calls by 40%.
+- Engineered SAMS RFID tracking system with 85% improvement in tracking accuracy.
+- Built an OTA firmware update app, cutting on-site servicing effort by 70%.
+- Built a digital slide-display application using Flutter.
+Tech: Flutter, IoT, RFID, OTA Updates
+
+System Software Engineer | Randstad (Nvidia) | Nov 2021 – Jun 2022
+- Tested multiple Nvidia internal tools, improving QA reliability and reducing defect leakage across release cycles.
+Tech: QA Automation
+
+Freelance Developer | Self-Employed | 2019 – Ongoing
+- Refactored a 15,000-line monolithic backend (Tickiot) into a clean modular architecture. Built an admin portal for their DevOps team to manage customers, and an AI pipeline for automated user query resolution.
+- Built cross-platform mobile apps including a government cleanliness app and Art of Cooking. Delivered 10+ Fiverr projects with 100% client satisfaction.
+Tech: Node.js, Flutter, REST APIs, Architecture
+
+---
+
+EDUCATION
+
+JNEC, Chhatrapati Sambhaji Nagar
+B.Tech — Electronics & Telecommunications
+2017 – 2021 | CGPA 8.02
+
+---
+
+OPEN SOURCE
+
+- Fixed upload bugs in flutter_background_downloader (https://pub.dev/packages/background_downloader)
+- Updated flutter_chatview2 for latest Flutter releases (https://pub.dev/packages/chatview2)
+- Added missing countries and fixed country config errors in validator.js (https://github.com/validatorjs/validator.js)
+- Improved website generation prompts for bolt.diy (https://github.com/stackblitz-labs/bolt.diy)
+- Actively contributing to AutoMQ (https://github.com/AutoMQ/automq)

@@ -325,6 +325,9 @@
         <span class="tag hot">AWS</span>
         <span class="tag">GCP</span>
         <span class="tag">CI/CD</span>
+        <span class="tag">Docker</span>
+        <span class="tag">Nginx</span>
+        <span class="tag">Linux</span>
       </div>
     </div>
 
@@ -352,18 +355,18 @@
     </div>
 
     <div class="section-label">Open Source</div>
-    <div class="oss-item">Fixed upload bugs in flutter_background_downloader</div>
-    <div class="oss-item">Updated flutter_chatview2 for latest Flutter releases</div>
-    <div class="oss-item">Added missing countries and fixed country config errors in validator.js</div>
-    <div class="oss-item">Improved website generation prompts for bolt.diy</div>
-    <div class="oss-item">Actively contributing to AutoMQ</div>
+    <div class="oss-item"><a href="https://pub.dev/packages/background_downloader" target="_blank">Fixed upload bugs in flutter_background_downloader</a></div>
+    <div class="oss-item"><a href="https://pub.dev/packages/chatview2" target="_blank">Updated flutter_chatview2 for latest Flutter releases</a></div>
+    <div class="oss-item"><a href="https://github.com/validatorjs/validator.js" target="_blank">Added missing countries and fixed country config errors in validator.js</a></div>
+    <div class="oss-item"><a href="https://github.com/stackblitz-labs/bolt.diy" target="_blank">Improved website generation prompts for bolt.diy</a></div>
+    <div class="oss-item"><a href="https://github.com/AutoMQ/automq" target="_blank">Actively contributing to AutoMQ</a></div>
 
   </div>
 
   <div class="right">
 
     <div class="profile-text">
-      I'm a full-stack developer who enjoys building more than anything else. I love driving products from <strong>0→1</strong> and scaling them <strong>1→100</strong> — owning architecture, execution, and delivery.<br><br>I've built WhatsApp-based platforms, AI-powered review systems, website generators, analytics pipelines, IoT apps, payment integrations, and automated QA tooling. I focus on <strong>reducing dev time, improving reliability, and shipping fast.</strong>
+      Full-stack developer who loves driving products from <strong>0→1</strong> and scaling them <strong>1→100</strong> — owning architecture, execution, and delivery.<br><br>Built a WhatsApp platform <strong>acquired by Petpooja</strong>, AI-powered OCR and review systems, website generators with multi-gateway payments, IoT apps, analytics pipelines, and automated QA tooling — focused on <strong>reducing dev time, improving reliability, and shipping fast.</strong>
     </div>
 
     <div class="exp-section-label">Experience</div>
@@ -376,16 +379,13 @@
       </div>
       <div class="exp-company">Transerg LLP <span>· India</span></div>
       <ul class="bullets">
-        <li>Engineered and scaled <strong>Booky</strong>, a WhatsApp-based reservation platform — later <strong>acquired by Petpooja.</strong> Integrated Swiggy/Zomato-style syncing, improving operational accuracy by <strong>70%.</strong></li>
-        <li>Engineered <strong>Petpooja Task</strong> — a <strong>30,000 MAU</strong> platform (tracked via Firebase) combining AI-based image review and a structured validation system where users complete tasks with defined rules, ensuring quality and consistency before acceptance. Reduced manual task-checking cycles by <strong>100%.</strong></li>
-        <li>Engineered <strong>Flowbit AI</strong> for invoice OCR and field mapping, cutting data-entry time by <strong>80–90%.</strong></li>
-        <li>Engineered <strong>OOW (Online Ordering Widgets)</strong> — a platform letting restaurants generate full websites from Petpooja data. Integrated payment gateways (Razorpay, Cashfree, Datacap, Yoco), DoorDash delivery, and custom domain configuration per store.</li>
-        <li>Architected infrastructure for high-traffic restaurant storefronts — traffic routing, domain management, and per-store config at scale.</li>
-        <li>Currently engineering <strong>AI-powered website generation from prompt</strong> for zero-code merchant onboarding.</li>
-        <li>Led <strong>MongoDB data migration</strong> and built <strong>ClickHouse analytics pipelines</strong> for product growth and user-behaviour tracking.</li>
-        <li>Engineered internal <strong>sales dashboard, pipeline &amp; onboarding flow</strong>, boosting sales productivity by <strong>30%.</strong></li>
-        <li>Engineered an <strong>AI-driven QA Agent</strong> that cut testing cycles by <strong>40%.</strong></li>
-        <li>Reduced developer deployment time by <strong>50%</strong> via AWS CI/CD automation.</li>
+        <li>Built and scaled <strong>Booky</strong>, a WhatsApp-based reservation platform — later <strong>acquired by Petpooja.</strong> Integrated Swiggy/Zomato-style syncing, improving operational accuracy by <strong>70%.</strong></li>
+        <li>Shipped <strong>Petpooja Task</strong> — a <strong>30,000 MAU</strong> platform combining AI-based image review and structured validation, fully automating manual task-checking cycles.</li>
+        <li>Designed <strong>Flowbit AI</strong> — OCR extraction pipeline using <strong>Llama 3.2 Vision</strong>, with custom field-mapping logic for multi-format invoices, cutting data-entry time by <strong>80–90%.</strong></li>
+        <li>Architected <strong>OOW (Online Ordering Widgets)</strong> — a platform letting restaurants generate full websites from Petpooja data. Integrated payment gateways (Razorpay, Cashfree, Datacap, Yoco), DoorDash delivery, and custom domain configuration per store.</li>
+        <li>Set up <strong>Looker Studio dashboards</strong> for user-behaviour tracking and product growth insights.</li>
+        <li>Delivered an <strong>AI-driven QA Agent</strong> that cut testing cycles by <strong>40%.</strong></li>
+        <li>Set up <strong>full DevOps infrastructure</strong> — server provisioning, Nginx reverse proxies, CI/CD pipelines for frontend &amp; backend, and automated deployments on AWS, reducing deployment time by <strong>50%.</strong></li>
         <li>Managing <strong>4 teams (15 members)</strong> — coordinating architecture, releases, and roadmap.</li>
       </ul>
       <div class="exp-stack">
@@ -447,29 +447,7 @@
 
     <hr class="exp-divider">
 
-    <!-- Tickiot -->
-    <div class="exp-item">
-      <div class="exp-header">
-        <div class="exp-role">Backend Consultant</div>
-        <div class="exp-period">Freelance</div>
-      </div>
-      <div class="exp-company">Tickiot</div>
-      <ul class="bullets">
-        <li>Inherited a <strong>15,000-line monolithic backend</strong> — all API logic in a single file with no separation of concerns.</li>
-        <li>Fully refactored into a clean modular architecture with proper route separation, controllers, services, and middleware layers.</li>
-        <li>Dramatically improved maintainability and reduced onboarding friction, preparing the codebase for scalable feature development.</li>
-      </ul>
-      <div class="exp-stack">
-        <span class="stack-chip">Node.js</span>
-        <span class="stack-chip">REST APIs</span>
-        <span class="stack-chip">Architecture</span>
-        <span class="stack-chip">Refactoring</span>
-      </div>
-    </div>
-
-    <hr class="exp-divider">
-
-    <!-- Freelance -->
+    <!-- Freelance & Consulting -->
     <div class="exp-item">
       <div class="exp-header">
         <div class="exp-role">Freelance Developer</div>
@@ -477,9 +455,19 @@
       </div>
       <div class="exp-company">Self-Employed</div>
       <ul class="bullets">
-        <li>Built government cleanliness app and <em>Art of Cooking</em> — full cross-platform mobile apps.</li>
-        <li>Delivered <strong>10+ Fiverr projects</strong> with 100% client satisfaction rating.</li>
+        <li>Refactored a <strong>15,000-line monolithic backend</strong> (<a href="https://tickiot.com/" target="_blank">Tickiot</a>) into a clean modular architecture. Built an <strong>admin portal</strong> for their DevOps team to manage customers, and an <strong>AI pipeline</strong> for automated user query resolution.</li>
+        <li>Built cross-platform mobile apps including a government cleanliness app and <em>Art of Cooking</em>. Delivered <strong>10+ projects</strong> with 100% client satisfaction.</li>
       </ul>
       <div class="exp-stack">
+        <span class="stack-chip">Node.js</span>
         <span class="stack-chip">Flutter</span>
-        <span class="stack
+        <span class="stack-chip">REST APIs</span>
+        <span class="stack-chip">Architecture</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
