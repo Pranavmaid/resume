@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="format-detection" content="telephone=no, email=no">
+<title>Pranav Maid — Solutions Architect</title>
+<link rel="icon" id="favicon" type="image/png" href="https://media.licdn.com/dms/image/v2/D5603AQH6Qy6gY8a3_A/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1700125910729?e=1776297600&v=beta&t=l_IolBNneuETaYWe12Fg2rUA5P6pTsc_6QI0GC34bs8"/>
+<script>
+  (function() {
+    var img = new Image();
+    img.crossOrigin = 'anonymous';
+    img.onload = function() {
+      var canvas = document.createElement('canvas');
+      canvas.width = canvas.height = 64;
+      var ctx = canvas.getContext('2d');
+      ctx.beginPath();
+      ctx.arc(32, 32, 32, 0, Math.PI * 2);
+      ctx.clip();
+      ctx.drawImage(img, 0, 0, 64, 64);
+      document.getElementById('favicon').href = canvas.toDataURL('image/png');
+    };
+    img.src = 'https://media.licdn.com/dms/image/v2/D5603AQH6Qy6gY8a3_A/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1700125910729?e=1776297600&v=beta&t=l_IolBNneuETaYWe12Fg2rUA5P6pTsc_6QI0GC34bs8';
+  })();
+</script>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --ink: #1a1814;
+    --ink-2: #3d3a34;
+    --ink-3: #7a766e;
+    --rule: #d4cfc6;
+    --accent: #FF282D;
+    --accent-light: #ffe9ea;
+    --bg: #faf9f7;
+    --col-left: 200px;
+  }
+
+  html { font-size: 10pt; }
+
+  body {
+    font-family: 'Outfit', sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.5;
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    padding: 48px 52px 28px;
+    border-bottom: 2px solid var(--ink);
+    gap: 20px;
+  }
+
+  .name {
+    font-family: 'DM Serif Display', serif;
+    font-size: 42pt;
+    line-height: 1;
+    letter-spacing: -1px;
+    color: var(--ink);
+  }
+
+  .name em {
+    display: block;
+    font-family: 'DM Serif Display', serif;
+    font-style: italic;
+    color: var(--accent);
+    font-size: 20pt;
+    margin-top: 4px;
+    letter-spacing: 0;
+  }
+
+  .contact {
+    text-align: right;
+    font-family: 'DM Mono', monospace;
+    font-size: 7.5pt;
+    color: var(--ink-2);
+    line-height: 2;
+  }
+
+  .contact a { color: var(--ink-2); text-decoration: none; border-bottom: 1px solid var(--rule); }
+
+  .body {
+    display: grid;
+    grid-template-columns: var(--col-left) 1fr;
+    padding: 0 52px 48px;
+  }
+
+  .left {
+    padding-top: 32px;
+    padding-right: 28px;
+    border-right: 1px solid var(--rule);
+  }
+
+  .section-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 6.5pt;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 10px;
+    margin-top: 28px;
+  }
+
+  .section-label:first-child { margin-top: 0; }
+
+  .skill-group { margin-bottom: 14px; }
+
+  .skill-group-name {
+    font-size: 7pt;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 4px;
+    letter-spacing: 0.04em;
+  }
+
+  .skill-tags { display: flex; flex-wrap: wrap; gap: 3px; }
+
+  .tag {
+    font-family: 'DM Mono', monospace;
+    font-size: 6.5pt;
+    background: white;
+    border: 1px solid var(--rule);
+    color: var(--ink-2);
+    padding: 2px 6px;
+    border-radius: 2px;
+  }
+
+  .tag.hot {
+    background: var(--accent-light);
+    border-color: #f5a9ab;
+    color: var(--accent);
+  }
+
+  .edu-school { font-size: 8pt; font-weight: 600; color: var(--ink); line-height: 1.4; }
+  .edu-degree { font-size: 7.5pt; color: var(--ink-2); line-height: 1.4; }
+  .edu-meta { font-family: 'DM Mono', monospace; font-size: 6.5pt; color: var(--ink-3); margin-top: 2px; }
+
+  .oss-item {
+    font-size: 7.5pt;
+    color: var(--ink-2);
+    line-height: 1.5;
+    padding-left: 10px;
+    position: relative;
+    margin-bottom: 4px;
+  }
+
+  .oss-item::before { content: '↗'; position: absolute; left: 0; color: var(--accent); font-size: 7pt; }
+
+  .right { padding-top: 32px; padding-left: 32px; }
+
+  .profile-text {
+    font-size: 9pt;
+    color: var(--ink-2);
+    line-height: 1.75;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--rule);
+    margin-bottom: 28px;
+  }
+
+  .profile-text strong { color: var(--ink); font-weight: 600; }
+
+  .exp-section-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 6.5pt;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 20px;
+  }
+
+  .exp-item { margin-bottom: 28px; }
+  .exp-item:last-child { margin-bottom: 0; }
+
+  .exp-header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: baseline;
+    margin-bottom: 2px;
+  }
+
+  .exp-role {
+    font-family: 'DM Serif Display', serif;
+    font-size: 13pt;
+    color: var(--ink);
+    line-height: 1.2;
+  }
+
+  .exp-period {
+    font-family: 'DM Mono', monospace;
+    font-size: 6.5pt;
+    color: var(--ink-3);
+    white-space: nowrap;
+  }
+
+  .exp-company {
+    font-size: 8pt;
+    font-weight: 600;
+    color: var(--accent);
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+  }
+
+  .exp-company span { color: var(--ink-3); font-weight: 400; margin-left: 6px; }
+
+  .bullets { list-style: none; }
+
+  .bullets li {
+    font-size: 8pt;
+    color: var(--ink-2);
+    line-height: 1.6;
+    padding-left: 14px;
+    position: relative;
+    margin-bottom: 4px;
+  }
+
+  .bullets li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--rule);
+    font-size: 7pt;
+    top: 1px;
+  }
+
+  .bullets li strong { color: var(--ink); font-weight: 600; }
+
+  .exp-stack { display: flex; flex-wrap: wrap; gap: 3px; margin-top: 9px; }
+
+  .stack-chip {
+    font-family: 'DM Mono', monospace;
+    font-size: 6pt;
+    background: var(--bg);
+    border: 1px solid var(--rule);
+    color: var(--ink-3);
+    padding: 2px 7px;
+    border-radius: 99px;
+  }
+
+  .stack-chip.primary {
+    background: var(--accent-light);
+    border-color: #f5a9ab;
+    color: var(--accent);
+  }
+
+  .exp-divider { border: none; border-top: 1px dashed var(--rule); margin: 24px 0; }
+
+  @media print {
+    body { background: white; max-width: none; }
+    .header { padding: 16px 36px 12px; }
+    .name { font-size: 32pt; }
+    .name em { font-size: 15pt; margin-top: 2px; }
+    .contact { font-size: 7pt; line-height: 1.7; }
+    .body { padding: 0 36px 16px; }
+    .left { padding-top: 14px; padding-right: 20px; }
+    .right { padding-top: 14px; padding-left: 24px; }
+    .section-label { margin-top: 14px; margin-bottom: 5px; font-size: 6pt; }
+    .skill-group { margin-bottom: 8px; }
+    .skill-group-name { font-size: 6.5pt; }
+    .tag { font-size: 6pt; padding: 1px 5px; }
+    .profile-text { font-size: 7.5pt; line-height: 1.5; padding-bottom: 10px; margin-bottom: 12px; }
+    .exp-section-label { margin-bottom: 10px; font-size: 6pt; }
+    .exp-item { margin-bottom: 12px; }
+    .exp-role { font-size: 11pt; }
+    .exp-company { font-size: 7.5pt; margin-bottom: 6px; }
+    .exp-period { font-size: 6pt; }
+    .bullets li { margin-bottom: 1px; font-size: 7pt; line-height: 1.45; }
+    .exp-stack { margin-top: 4px; gap: 2px; }
+    .stack-chip { font-size: 5.5pt; padding: 1px 5px; }
+    .exp-divider { margin: 10px 0; }
+    .edu-school { font-size: 7.5pt; }
+    .edu-degree { font-size: 7pt; }
+    .edu-meta { font-size: 6pt; }
+    .oss-item { margin-bottom: 1px; font-size: 6.5pt; line-height: 1.4; }
+    a { color: inherit !important; }
+    * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  }
+
+  @page { size: A4; margin: 6mm 0 0 0; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div>
+    <div class="name">Pranav Maid<em>Solutions Architect</em></div>
+  </div>
+  <div class="contact">
+    <div>+91 96898 58340</div>
+    <div><a href="mailto:pranavmaid1@gmail.com"><span class="__cf_email__">pranavmaid1@gmail.com</span></a></div>
+    <div><a href="https://github.com/pranavmaid" target="_blank">github.com/pranavmaid</a></div>
+    <div><a href="https://www.linkedin.com/in/pranav-maid-99705717a/" target="_blank">linkedin.com/in/pranavmaid</a></div>
+    <div>Pune / Chhatrapati Sambhaji Nagar, India</div>
+  </div>
+</div>
+
+<div class="body">
+
+  <div class="left">
+
+    <div class="section-label">Skills</div>
+
+    <div class="skill-group">
+      <div class="skill-group-name">Edge &amp; Web</div>
+      <div class="skill-tags">
+        <span class="tag hot">CDN</span>
+        <span class="tag hot">WAF</span>
+        <span class="tag hot">HTTP/1.1 &amp; 2</span>
+        <span class="tag hot">Caching</span>
+        <span class="tag">TLS</span>
+        <span class="tag">Reverse Proxy</span>
+      </div>
+    </div>
+
+    <div class="skill-group">
+      <div class="skill-group-name">Protocols</div>
+      <div class="skill-tags">
+        <span class="tag hot">TCP/IP</span>
+        <span class="tag hot">UDP</span>
+        <span class="tag hot">DNS</span>
+        <span class="tag">TLS/SSL</span>
+        <span class="tag">WebSockets</span>
+      </div>
+    </div>
+
+    <div class="skill-group">
+      <div class="skill-group-name">Languages</div>
+      <div class="skill-tags">
+        <span class="tag hot">JavaScript</span>
+        <span class="tag hot">TypeScript</span>
+        <span class="tag hot">Go</span>
+        <span class="tag">Python</span>
+        <span class="tag">VCL</span>
+        <span class="tag">Rust</span>
+      </div>
+    </div>
+
+    <div class="skill-group">
+      <div class="skill-group-name">Infra &amp; DevOps</div>
+      <div class="skill-tags">
+        <span class="tag hot">Nginx</span>
+        <span class="tag hot">AWS</span>
+        <span class="tag hot">Docker</span>
+        <span class="tag hot">CI/CD</span>
+        <span class="tag">Linux</span>
+        <span class="tag">GCP</span>
+      </div>
+    </div>
+
+    <div class="skill-group">
+      <div class="skill-group-name">Backend</div>
+      <div class="skill-tags">
+        <span class="tag hot">Node.js</span>
+        <span class="tag hot">REST APIs</span>
+        <span class="tag">Microservices</span>
+        <span class="tag">Event-Driven</span>
+      </div>
+    </div>
+
+    <div class="skill-group">
+      <div class="skill-group-name">Consulting</div>
+      <div class="skill-tags">
+        <span class="tag hot">Customer-Facing</span>
+        <span class="tag hot">Onboarding</span>
+        <span class="tag hot">Training &amp; Enablement</span>
+        <span class="tag">Project Delivery</span>
+        <span class="tag">Mentoring</span>
+      </div>
+    </div>
+
+    <div class="section-label">Education</div>
+    <div>
+      <div class="edu-school">JNEC, Chhatrapati Sambhaji Nagar</div>
+      <div class="edu-degree">B.Tech — Electronics &amp; Telecommunications</div>
+      <div class="edu-meta">2017 – 2021 · CGPA 8.02</div>
+    </div>
+
+    <div class="section-label">Open Source</div>
+    <div class="oss-item"><a href="https://github.com/AutoMQ/automq" target="_blank">Contributing to AutoMQ — distributed messaging system</a></div>
+    <div class="oss-item"><a href="https://github.com/validatorjs/validator.js" target="_blank">Fixed country config errors and added locales in validator.js</a></div>
+    <div class="oss-item"><a href="https://github.com/stackblitz-labs/bolt.diy" target="_blank">Improved code generation prompts for bolt.diy</a></div>
+    <div class="oss-item"><a href="https://pub.dev/packages/background_downloader" target="_blank">Fixed upload bugs in flutter_background_downloader</a></div>
+
+  </div>
+
+  <div class="right">
+
+    <div class="profile-text">
+      Engineer with <strong>4+ years</strong> of experience designing and delivering <strong>edge, web, and backend platforms</strong> — and working directly with customers to onboard, integrate, and scale them. Deep practical knowledge of <strong>HTTP, CDN/caching, WAF, TLS, DNS, and reverse-proxy tuning</strong> through hands-on production work on <strong>Nginx</strong>, AWS, and multi-tenant web platforms. Experienced in writing code in <strong>JavaScript, Go, and Python</strong>, architecting solutions, authoring training material, and <strong>leading 15 engineers across 4 teams.</strong> Passionate about <strong>programmable infrastructure, performance, and helping customers get the most out of their stack.</strong>
+    </div>
+
+    <div class="exp-section-label">Experience</div>
+
+    <!-- Transerg -->
+    <div class="exp-item">
+      <div class="exp-header">
+        <div class="exp-role">Senior Software Developer / Tech Lead</div>
+        <div class="exp-period">May 2023 – Present</div>
+      </div>
+      <div class="exp-company">Transerg LLP <span>· India</span></div>
+      <ul class="bullets">
+        <li>Architected <strong>OOW (Online Ordering Widgets)</strong> — a multi-tenant web platform generating branded storefronts for thousands of restaurants, with per-tenant <strong>custom domains, TLS termination, CDN caching, and Nginx reverse-proxy routing</strong>.</li>
+        <li>Designed and tuned <strong>HTTP caching and edge behaviour</strong> for high-traffic storefronts — cache-key strategy, TTLs, cache invalidation on menu/pricing updates, and origin-shield patterns to protect backends during traffic spikes.</li>
+        <li>Integrated <strong>4 payment gateways</strong> (Razorpay, Cashfree, Datacap, Yoco) and DoorDash delivery APIs — designing webhook, retry, and idempotency logic across untrusted networks.</li>
+        <li>Set up <strong>production infrastructure from scratch</strong> — server provisioning, Nginx reverse proxies, TLS/certbot, CI/CD pipelines, Docker containers, and automated deploys on AWS — cutting deployment time by <strong>50%</strong>.</li>
+        <li>Built <strong>Flowbit AI</strong> (OCR pipeline on Llama 3.2 Vision) and <strong>Petpooja Task</strong> (<strong>30,000 MAU</strong> review platform) — owning system design, API contracts, and rollout.</li>
+        <li>Scaled <strong>Booky</strong>, a WhatsApp reservation platform — later <strong>acquired by Petpooja</strong> — improving operational accuracy by <strong>70%</strong>.</li>
+        <li>Act as <strong>customer-facing technical lead</strong> — running integration calls, solution design workshops, and troubleshooting sessions with restaurant chains and partner engineering teams.</li>
+        <li>Authored <strong>onboarding and training material</strong> for engineers and customers; mentor <strong>15 engineers across 4 teams</strong>, owning architecture reviews, code reviews, and release planning.</li>
+      </ul>
+      <div class="exp-stack">
+        <span class="stack-chip primary">Nginx</span>
+        <span class="stack-chip primary">HTTP/TLS</span>
+        <span class="stack-chip primary">CDN/Caching</span>
+        <span class="stack-chip primary">Node.js</span>
+        <span class="stack-chip primary">AWS</span>
+        <span class="stack-chip">Docker</span>
+        <span class="stack-chip">CI/CD</span>
+        <span class="stack-chip">React</span>
+        <span class="stack-chip">Next.js</span>
+        <span class="stack-chip">Razorpay</span>
+        <span class="stack-chip">DoorDash API</span>
+      </div>
+    </div>
+
+    <hr class="exp-divider">
+
+    <!-- ANTAR IoT -->
+    <div class="exp-item">
+      <div class="exp-header">
+        <div class="exp-role">Full-Stack / Systems Engineer</div>
+        <div class="exp-period">Jun 2022 – May 2023</div>
+      </div>
+      <div class="exp-company">ANTAR IoT <span>· India</span></div>
+      <ul class="bullets">
+        <li>Engineered backend services and real-time telemetry ingestion for <strong>Sandhya Aqua</strong> — working over <strong>TCP/UDP</strong> with thousands of field devices, reducing customer support calls by <strong>40%</strong>.</li>
+        <li>Built an <strong>OTA firmware update system</strong> with version management, staged rollouts, and rollback — cutting on-site servicing by <strong>70%</strong>.</li>
+        <li>Built <strong>SAMS</strong>, an RFID tracking system with an event-driven backend, achieving an <strong>85%</strong> improvement in tracking accuracy.</li>
+        <li>Worked directly with operations teams as the <strong>on-call technical contact</strong> for device connectivity, DNS, and network issues.</li>
+      </ul>
+      <div class="exp-stack">
+        <span class="stack-chip primary">Node.js</span>
+        <span class="stack-chip">TCP/UDP</span>
+        <span class="stack-chip">IoT</span>
+        <span class="stack-chip">OTA Updates</span>
+        <span class="stack-chip">RFID</span>
+      </div>
+    </div>
+
+    <hr class="exp-divider">
+
+    <!-- Nvidia -->
+    <div class="exp-item">
+      <div class="exp-header">
+        <div class="exp-role">System Software Engineer</div>
+        <div class="exp-period">Nov 2021 – Jun 2022</div>
+      </div>
+      <div class="exp-company">Randstad (Nvidia) <span>· India</span></div>
+      <ul class="bullets">
+        <li>Developed and executed <strong>automated test suites</strong> for Nvidia's internal tooling, integrated into CI pipelines — improving QA reliability and reducing defect leakage across release cycles.</li>
+        <li>Partnered with cross-functional engineering teams to triage performance bottlenecks and validate fixes.</li>
+      </ul>
+      <div class="exp-stack">
+        <span class="stack-chip">Test Automation</span>
+        <span class="stack-chip">CI</span>
+        <span class="stack-chip">QA Engineering</span>
+      </div>
+    </div>
+
+    <hr class="exp-divider">
+
+    <!-- Freelance -->
+    <div class="exp-item">
+      <div class="exp-header">
+        <div class="exp-role">Freelance Solutions Engineer</div>
+        <div class="exp-period">2019 – Ongoing</div>
+      </div>
+      <div class="exp-company">Self-Employed</div>
+      <ul class="bullets">
+        <li>Refactored a <strong>15,000-line monolithic backend</strong> (<a href="https://tickiot.com/" target="_blank">Tickiot</a>) into a modular, reverse-proxied microservices architecture — working directly with the client as technical consultant from requirements through delivery.</li>
+        <li>Delivered <strong>10+ end-to-end projects</strong> — requirements analysis, solution design, implementation, deployment, and customer handover with <strong>100% client satisfaction</strong>.</li>
+      </ul>
+      <div class="exp-stack">
+        <span class="stack-chip primary">Node.js</span>
+        <span class="stack-chip">Nginx</span>
+        <span class="stack-chip">REST APIs</span>
+        <span class="stack-chip">Solution Design</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
