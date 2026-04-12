@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Pranav Maid — Cover Letter, MongoDB</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --ink: #1a1814;
+    --ink-2: #3d3a34;
+    --ink-3: #7a766e;
+    --rule: #d4cfc6;
+    --accent: #00684A;
+    --bg: #faf9f7;
+  }
+  html { font-size: 11pt; }
+  body {
+    font-family: 'Outfit', sans-serif;
+    background: var(--bg);
+    color: var(--ink-2);
+    line-height: 1.7;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 56px 64px;
+  }
+  .header {
+    border-bottom: 2px solid var(--ink);
+    padding-bottom: 20px;
+    margin-bottom: 32px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    gap: 20px;
+  }
+  .name {
+    font-family: 'DM Serif Display', serif;
+    font-size: 30pt;
+    line-height: 1;
+    color: var(--ink);
+    letter-spacing: -0.5px;
+  }
+  .name em {
+    display: block;
+    font-style: italic;
+    font-size: 13pt;
+    color: var(--accent);
+    margin-top: 4px;
+  }
+  .contact {
+    font-family: 'DM Mono', monospace;
+    font-size: 7.5pt;
+    color: var(--ink-2);
+    text-align: right;
+    line-height: 1.9;
+  }
+  .contact a { color: var(--ink-2); text-decoration: none; border-bottom: 1px solid var(--rule); }
+
+  .meta {
+    font-family: 'DM Mono', monospace;
+    font-size: 8pt;
+    color: var(--ink-3);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    margin-bottom: 24px;
+  }
+  .addressee {
+    font-size: 10pt;
+    color: var(--ink);
+    margin-bottom: 28px;
+  }
+  .addressee strong { font-weight: 600; }
+
+  p {
+    font-size: 9.5pt;
+    margin-bottom: 16px;
+    color: var(--ink-2);
+  }
+  p strong { color: var(--ink); font-weight: 600; }
+
+  .signoff {
+    margin-top: 28px;
+    font-size: 9.5pt;
+    color: var(--ink);
+  }
+  .signoff .name-line {
+    font-family: 'DM Serif Display', serif;
+    font-size: 14pt;
+    color: var(--ink);
+    margin-top: 6px;
+  }
+
+  @page { size: A4; margin: 14mm; }
+  @media print {
+    body { background: white; padding: 0; max-width: none; }
+    * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="name">Pranav Maid<em>Senior Software Engineer</em></div>
+  <div class="contact">
+    <div>+91 96898 58340</div>
+    <div><a href="mailto:pranavmaid1@gmail.com">pranavmaid1@gmail.com</a></div>
+    <div><a href="https://www.linkedin.com/in/pranav-maid-99705717a/">linkedin.com/in/pranavmaid</a></div>
+  </div>
+</div>
+
+<div class="meta">11 April 2026</div>
+
+<div class="addressee">
+  <strong>Hiring Team, Modernization Testing &amp; Verification</strong><br>
+  MongoDB — Gurugram, India
+</div>
+
+<p>Dear Hiring Team,</p>
+
+<p>
+  I'm writing to apply for the <strong>Senior Software Engineer, AMP</strong> role on the Modernization Testing and Verification team. The problem your team is solving — giving enterprises a provable safety net when they move off legacy RDBMS onto MongoDB — is exactly the kind of hard, consequential infrastructure work I want to do next. Functional equivalence and state validation across two very different data models is one of those problems where getting it 95% right isn't good enough, and that's what makes it worth solving well.
+</p>
+
+<p>
+  For the last four years I've built data-intensive platforms with <strong>MongoDB as the primary data layer</strong> — designing schemas, aggregation pipelines, and query-optimization strategies for workloads up to <strong>30,000 MAU</strong>. At <strong>Transerg</strong>, I shipped <strong>Booky</strong> (a WhatsApp reservation platform <strong>acquired by Petpooja</strong>) and <strong>Petpooja Task</strong>, where I owned the document model for hierarchical workflows and per-tenant configuration. Earlier, I refactored a <strong>15,000-line monolithic backend</strong> into services backed by MongoDB. I've also worked the relational side — Postgres/MySQL data modeling on payment and ordering flows — so the cross-paradigm equivalence problem the JD describes isn't abstract to me.
+</p>
+
+<p>
+  On <strong>LLMs in the developer workflow</strong> — which your JD calls out specifically — I've shipped this in production, not just experimented. I built an <strong>AI-driven QA agent</strong> that consumes specs and generates regression coverage, cutting testing cycles by <strong>40%</strong>, and I architected <strong>Flowbit AI</strong>, a Llama 3.2 Vision OCR pipeline with custom field-mapping and fallback flows. I use <strong>Cursor and Claude Code</strong> daily for spec-driven development. I treat LLMs as engineering tools for unit-test generation and edge-case discovery — which is exactly how your JD frames them.
+</p>
+
+<p>
+  I also spend a lot of my time on the things this role expects day-to-day: <strong>developer tooling and testing frameworks</strong>, change-data-capture style event pipelines (MongoDB change streams, webhook interception for third-party sync with Swiggy/Zomato/DoorDash), CI/CD, and <strong>technically leading 4 sub-teams (15 engineers)</strong> through design reviews and architecture decisions. I enjoy building the scaffolding other engineers rely on more than shipping one-off features.
+</p>
+
+<p>
+  I want to be upfront on two points. First, my commercial experience is closer to <strong>4+ years</strong> rather than the 6+ the JD mentions. Second, my primary backend stack has been <strong>Node.js/TypeScript</strong> rather than Java/Spring — I have working familiarity with the JVM ecosystem, but I'd be ramping on Spring Boot and JPA. I'm applying anyway because the core of this role — MongoDB depth, LLM-assisted test generation, building testing frameworks, and cross-database state reasoning — is exactly what I've been doing, and I pick up new languages fast when the underlying problems are familiar.
+</p>
+
+<p>
+  Thank you for your time and consideration. I'd welcome the chance to talk about the AMP roadmap and where I could contribute.
+</p>
+
+<div class="signoff">
+  Sincerely,
+  <div class="name-line">Pranav Maid</div>
+</div>
+
+</body>
+</html>
