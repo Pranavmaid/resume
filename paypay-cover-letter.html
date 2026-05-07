@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Pranav Maid — Cover Letter, PayPay India</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --ink: #1a0a0a;
+    --ink-2: #3d2020;
+    --ink-3: #7a5c5c;
+    --rule: #e2cece;
+    --accent: #b91c1c;
+    --bg: #fdf8f8;
+  }
+  html { font-size: 11pt; }
+  body {
+    font-family: 'Outfit', sans-serif;
+    background: var(--bg);
+    color: var(--ink-2);
+    line-height: 1.7;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 56px 64px;
+  }
+  .header {
+    border-bottom: 2px solid var(--ink);
+    padding-bottom: 20px;
+    margin-bottom: 32px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    gap: 20px;
+  }
+  .name {
+    font-family: 'DM Serif Display', serif;
+    font-size: 30pt;
+    line-height: 1;
+    color: var(--ink);
+    letter-spacing: -0.5px;
+  }
+  .name em {
+    display: block;
+    font-style: italic;
+    font-size: 13pt;
+    color: var(--accent);
+    margin-top: 4px;
+  }
+  .contact {
+    font-family: 'DM Mono', monospace;
+    font-size: 7.5pt;
+    color: var(--ink-2);
+    text-align: right;
+    line-height: 1.9;
+  }
+  .contact a { color: var(--ink-2); text-decoration: none; border-bottom: 1px solid var(--rule); }
+
+  .meta {
+    font-family: 'DM Mono', monospace;
+    font-size: 8pt;
+    color: var(--ink-3);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    margin-bottom: 24px;
+  }
+  .addressee {
+    font-size: 10pt;
+    color: var(--ink);
+    margin-bottom: 28px;
+  }
+  .addressee strong { font-weight: 600; }
+
+  p {
+    font-size: 9.5pt;
+    margin-bottom: 16px;
+    color: var(--ink-2);
+  }
+  p strong { color: var(--ink); font-weight: 600; }
+
+  .signoff {
+    margin-top: 28px;
+    font-size: 9.5pt;
+    color: var(--ink);
+  }
+  .signoff .name-line {
+    font-family: 'DM Serif Display', serif;
+    font-size: 14pt;
+    color: var(--ink);
+    margin-top: 6px;
+  }
+
+  @page { size: A4; margin: 14mm; }
+  @media print {
+    body { background: white; padding: 0; max-width: none; }
+    * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="name">Pranav Maid<em>Backend Engineer</em></div>
+  <div class="contact">
+    <div>+91 96898 58340</div>
+    <div><a href="mailto:pranavmaid1@gmail.com">pranavmaid1@gmail.com</a></div>
+    <div><a href="https://www.linkedin.com/in/pranav-maid-99705717a/">linkedin.com/in/pranavmaid</a></div>
+  </div>
+</div>
+
+<div class="meta">4 May 2026</div>
+
+<div class="addressee">
+  <strong>Hiring Team — Backend Engineering</strong><br>
+  PayPay India — Gurugram
+</div>
+
+<p>Dear Hiring Team,</p>
+
+<p>
+  I'm applying for the <strong>Backend Engineer</strong> role at PayPay India. Building payment infrastructure that handles millions of transactions reliably — where correctness isn't negotiable and latency costs money — is the kind of engineering problem I want to be working on next.
+</p>
+
+<p>
+  My primary languages are <strong>Python and Node.js/TypeScript</strong>, which aligns with the non-Java track in your qualifications. Over the past four years I've built backend systems in production environments where scale, reliability, and correctness matter. The most payment-relevant of these is <strong>OOW (Online Ordering Widgets)</strong> — a multi-tenant platform I architected from scratch at Transerg, serving thousands of restaurant merchants. I designed the RESTful API contracts, the per-merchant payment routing logic across <strong>four payment gateways</strong> (Razorpay, Cashfree, Datacap, Yoco), idempotency guarantees on all transaction endpoints, and the delivery integration layer with DoorDash. Designing for partial failures and reconciliation in payment flows — not just the happy path — was central to that work.
+</p>
+
+<p>
+  On the data side, I've used <strong>DynamoDB</strong> for high-throughput NoSQL workloads, <strong>MongoDB</strong> for document-centric services, and <strong>ClickHouse</strong> for analytics pipelines — all on AWS. I understand the trade-offs between consistency models, and I've designed schemas and access patterns with query performance and horizontal scalability in mind. I also built a <strong>Python-based agentic LLM pipeline</strong> (Flowbit AI) that processes multi-format invoice documents at volume — this is where my FastAPI and async Python backend work is most direct.
+</p>
+
+<p>
+  Your JD calls out <strong>AI-augmented engineering as mandatory</strong>, not optional. I agree with that framing entirely. I use LLMs daily for code review, debugging, documentation, and test-case generation — and I've shipped AI-driven infrastructure (the Flowbit OCR pipeline, an AI QA agent reducing regression cycles by 40%) as production features, not experiments. I also contribute to <strong>AutoMQ</strong>, an open-source distributed messaging system in the Kafka lineage, which keeps me close to the distributed systems and pub/sub problems your stack relies on.
+</p>
+
+<p>
+  I'm aware PayPay's primary stack is JVM-based, and I'm clear-eyed about that gap. What I bring as a counterweight is strong backend fundamentals — distributed data design, payment-domain experience, high-throughput API architecture, production ownership — and the right instinct to go to root cause, not workarounds. I pick up new runtimes and frameworks quickly when the fundamentals are solid underneath.
+</p>
+
+<p>
+  I'm ready to relocate to Gurugram and available immediately. I'd welcome the chance to talk through the payment infrastructure problems your India team is working on.
+</p>
+
+<div class="signoff">
+  Sincerely,
+  <div class="name-line">Pranav Maid</div>
+</div>
+
+</body>
+</html>
